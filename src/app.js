@@ -2,9 +2,9 @@ import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 
-import authRoutes from './src/routes/auth.routes.js';
-import taskRoutes from './src/routes/task.routes.js';
-import errorHandler from './src/middleware/errorHandler.middleware.js';
+import authRoutes from './routes/user.route.js';
+import taskRoutes from './routes/task.route.js';
+import errorHandler from './middlewares/errorHandler..middlewares.js';
 
 const app = express();
 
