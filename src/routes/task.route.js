@@ -7,11 +7,10 @@ import {
   markComplete,
   deleteTask,
 } from '../controllers/task.controller.js';
-import protect from '../middleware/auth.middleware.js';
+import protect from '../middlewares/auth.middleware.js';
 
 const router = express.Router();
 
-// Saare task routes protected hain — token zaroori hai
 router.use(protect);
 
 router.post('/', createTask);
